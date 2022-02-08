@@ -1,0 +1,34 @@
+//colors
+$white: #ffffff;
+$black: #000000;
+$gray: #4F4F4F;
+$gray-light: #BDBDBD;
+$gray-light-btns: #E7E7E7;
+$green: #009900;
+$blue: #689FD9;
+$red: #EB5757;
+$yellow: #CC933D;
+
+//text-colors
+$text: #000000;
+$text-gray: #4F4F4F;
+$text-gray-h: #111111;
+$text-gray-p:  #333333;
+$text-gray-light: #C0C0C0;
+
+//bg's colors
+$bg-body: #E5E5E5;
+
+//animations
+$slow-animation: 0.24s;
+$midd-animation: 0.18s;
+$fast-animation: 0.16s;
+
+//functions
+@function spacer($factor: 1) {
+    @return 4px * $factor;
+}
+
+@function softer($factor: 1) {
+    @return 2px * $factor;
+}

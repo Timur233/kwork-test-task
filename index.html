@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="container">
+      <h1 class="main-title">
+        Заказы
+      </h1>
+      <div class="orders-list">
+        <div class="orders-list__item order-item">
+          <div class="order-item__preview">
+            <div class="order-item__img-block">
+              <img class="order-item__img" src="./src/img/avatar.png" alt="">
+            </div>
+            <div class="order-item__info order-info">
+              <h2 class="order-info__title">
+                Баннер для сайта
+              </h2>
+              <div class="order-info__customer-status user-status">
+                Покупатель онлайн 
+                <span class="user-status__dot user-status__dot--green"></span>
+              </div>
+              <div class="order-info__control">
+                <button class="btn">
+                  Отправить сообщение
+                </button>
+              </div>
+            </div>
+            <div class="order-item__status order-status order-status--red">
+              <img class="order-status__icon" src="./src/icons/canceled.svg" alt="Отменён">
+              Отменён
+            </div>
+          </div>
+          <div class="order-item__history track-history">
+            <div class="track-history__item history-item">
+              <div class="history-item__progress history-item__progress--green">
+                <div class="history-item__progress-title">
+                  <span class="history-item__progress-dot"></span>
+                  <span>Заказ<br>создан</span>
+                </div>
+              </div>
+              <div class="history-item__body">
+                <h4 class="history-item__title">
+                  Получена информация от покупателя
+                </h4>
+                <div class="history-item__excerpt">
+                  <p>Покупатель следовал вашим инструкциям. Если отправленной информации недостаточно, уточните ее, отправив сообщение покупателю.</p>
+                  <p>Если информации достаточно, приступайте</p>
+                </div>
+              </div>
+            </div>
+            <div class="track-history__item history-item">
+              <div class="history-item__progress history-item__progress--green">
+                <div class="history-item__progress-title">
+                  <span class="history-item__progress-dot"></span>
+                  <span>Взят<br>в работу</span>
+                </div>
+              </div>
+              <div class="history-item__body">
+                <h4 class="history-item__title">
+                  Вы приступили к работе над заказом
+                </h4>
+                <div class="history-item__excerpt">
+                  <p>Приложите результат, когда будете готовы</p>
+                </div>
+              </div>
+            </div>
+            <div class="track-history__item history-item">
+              <div class="history-item__progress history-item__progress--green">
+                <div class="history-item__progress-title canceled">
+                  <span class="history-item__progress-dot"></span>
+                  <span>Сдан<br>на проверку</span>
+                </div>
+              </div>
+              <div class="history-item__body">
+                <h4 class="history-item__title">
+                  Заказ отправлен на проверку
+                </h4>
+                <div class="history-item__controls">
+                    <button class="btn btn--large btn--green">
+                        Опубликовать
+                    </button>
+                    <button class="btn btn--large btn__outline--green">
+                        Оставить без публикации
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-item__roll-btn btn btn__circle">
+            <img src="./src/icons/arrow.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
